@@ -28,6 +28,6 @@ func main() {
 		t.ExecuteTemplate(w, "index.html.tmpl", data)
 	})
 
-	log.Println("listening on", port)
+	log.Println("Server listening on", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
